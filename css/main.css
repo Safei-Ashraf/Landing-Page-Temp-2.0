@@ -1,3 +1,6 @@
+:root {
+  --main-color: rgb(0, 176, 255);
+}
 body {
   font-family: "Sriracha", cursive;
 }
@@ -9,7 +12,7 @@ section.landing-page {
   position: relative;
 }
 section.landing-page div.overlay {
-  background-color: rgba(18, 18, 18, 0.562);
+  background-color: rgba(18, 18, 18, 0.884);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -40,5 +43,29 @@ ul.nav-list li {
   padding: 30px;
   font-size: 20px;
 }
-
+section.landing-page div.intro-text {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+section.landing-page div.intro-text h1 {
+  color: var(--main-color);
+  font-size: 3em;
+  margin: 0;
+}
+div.intro-text h1 span {
+  color: rgb(0, 132, 255);
+}
+div.intro-text p {
+  line-height: 1.6;
+  font-size: 1.5em;
+}
 /* END LANDING PAGE */
