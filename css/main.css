@@ -5,13 +5,13 @@ body {
   font-family: "Sriracha", cursive;
 }
 /* START LANDING PAGE */
-section.landing-page {
+section#landing-page {
   min-height: 97vh;
   background-image: url(../imgs/hero/6.png);
   background-size: cover;
   position: relative;
 }
-section.landing-page div.overlay {
+section#landing-page div.overlay {
   background-color: rgba(18, 18, 18, 0.884);
   position: absolute;
   height: 100%;
@@ -58,7 +58,7 @@ ul.nav-list li a.active {
   -o-transition: 0.5s;
 }
 
-section.landing-page div.intro-text {
+section#landing-page div.intro-text {
   text-align: center;
   color: white;
   z-index: 2;
@@ -71,7 +71,7 @@ section.landing-page div.intro-text {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
-section.landing-page div.intro-text h1 {
+section#landing-page div.intro-text h1 {
   color: var(--main-color);
   font-size: 3em;
   margin: 0;
