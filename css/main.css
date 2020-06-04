@@ -11,8 +11,8 @@ body {
 section#settings-box {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 20%;
+  left: -200px;
+  width: 200px;
   min-height: 100vh;
   background-color: rgba(226, 226, 226, 0.363);
   z-index: 999;
@@ -21,6 +21,9 @@ section#settings-box {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+}
+section#settings-box.open {
+  left: 0;
 }
 section#settings-box i.fa-gear {
   position: absolute;
@@ -35,6 +38,7 @@ section#settings-box i.fa-gear {
   -o-border-radius: 50%;
   text-align: center;
   width: 17px;
+  cursor: pointer;
 }
 section#settings-box div.settings-container {
 }
