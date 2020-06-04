@@ -1,12 +1,48 @@
 :root {
   --main-color: rgb(0, 176, 255);
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Sriracha", cursive;
 }
+/* START SETTINGS BOX */
+section#settings-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  min-height: 100vh;
+  background-color: rgba(226, 226, 226, 0.363);
+  z-index: 999;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+section#settings-box i.fa-gear {
+  position: absolute;
+  top: 15%;
+  right: -35px;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  width: 17px;
+}
+section#settings-box div.settings-container {
+}
+/* END SETTINGS BOX */
+
 /* START LANDING PAGE */
 section#landing-page {
-  min-height: 97vh;
+  min-height: 100vh;
   background-image: url(../imgs/hero/3.png);
   background-size: cover;
   position: relative;
