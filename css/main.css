@@ -1,0 +1,44 @@
+body {
+  font-family: "Sriracha", cursive;
+}
+/* START LANDING PAGE */
+section.landing-page {
+  min-height: 97vh;
+  background-image: url(../imgs/hero/6.png);
+  background-size: cover;
+  position: relative;
+}
+section.landing-page div.overlay {
+  background-color: rgba(18, 18, 18, 0.562);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+header.header-area {
+  position: relative;
+  z-index: 2;
+  color: #e2e2e2;
+  font-family: "Righteous", cursive;
+  display: flex;
+  padding: 10px;
+}
+header.header-area div.logo {
+  width: 300px;
+  padding: 30px;
+}
+header.header-area ul.nav-list {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+ul.nav-list li {
+  display: inline-block;
+  padding: 30px;
+  font-size: 20px;
+}
+
+/* END LANDING PAGE */
