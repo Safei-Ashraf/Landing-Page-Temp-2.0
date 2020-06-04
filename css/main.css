@@ -43,6 +43,21 @@ ul.nav-list li {
   padding: 30px;
   font-size: 20px;
 }
+ul.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+ul.nav-list li a:hover,
+ul.nav-list li a.active {
+  cursor: pointer;
+  color: var(--main-color);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
 section.landing-page div.intro-text {
   text-align: center;
   color: white;
