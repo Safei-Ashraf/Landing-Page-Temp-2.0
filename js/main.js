@@ -5,10 +5,20 @@
 //4-Icon gets class "open" removed;
 let toggleBtn = document.querySelector("#toggle-btn");
 let settingsBox = document.querySelector("#settings-box");
-// console.log(toggleBtn);
+//Click event handler:
 toggleBtn.addEventListener("click", () => {
   settingsBox.classList.toggle("open");
   console.log("clicked");
+});
+
+//Switch colors in sidebar:
+const colorsList = document.querySelectorAll(".colors-list li");
+//Loop on the list colors:
+colorsList.forEach((li) => {
+  //set bg color on click:
+  li.addEventListener("click", (e) => {
+    document.body.style.backgroundColor = e.target.dataset.color;
+  });
 });
 
 //Select Landing Page:
