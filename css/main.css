@@ -8,6 +8,7 @@ body {
   font-family: "Sriracha", cursive;
   background-color: #121212;
 }
+
 /* START SETTINGS BOX */
 section#settings-box {
   position: fixed;
@@ -57,8 +58,6 @@ section#settings-box ul.colors-list {
 section#settings-box .colors-list li {
   width: 40px;
   height: 40px;
-  background-color: aqua;
-  opacity: 0.5;
   display: inline-block;
   cursor: pointer;
   border-radius: 20%;
@@ -66,8 +65,9 @@ section#settings-box .colors-list li {
   -moz-border-radius: 20%;
   -ms-border-radius: 20%;
   -o-border-radius: 20%;
+  opacity: 0.3;
 }
-section#settings-box .colors-list li.active {
+section#settings-box .colors-list li.active-color {
   opacity: 1;
 }
 section#settings-box .colors-list li:first-child {

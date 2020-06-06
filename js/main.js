@@ -21,12 +21,22 @@ colorsList.forEach((li) => {
   });
 });
 
+//Highlight Selected color with ACTIVE Class:
+for (let i = 0; i < colorsList.length; i++) {
+  colorsList[i].addEventListener("click", function () {
+    let current = document.getElementsByClassName("active-color");
+    current[0].className = current[0].className.replace("active-color", "");
+    this.className += "active-color";
+  });
+}
+
 //Select Landing Page:
 let landingPage = document.querySelector("#landing-page");
-
+console.log(landingPage);
 ///randomize bg img:
 function randomizeBackground() {
   let randomizer = Math.floor(Math.random() * 5);
+  //console.log(`Randomizer value is ${randomizer}`);
   landingPage.style.backgroundImage = `url("/imgs/hero/${randomizer}.png")`;
 }
 //call random image function every 7s:
