@@ -95,7 +95,10 @@ section#settings-box .colors-list li:nth-child(5) {
 }
 
 /* END SETTINGS BOX */
-
+/*
+*
+*
+*/
 /* START LANDING PAGE */
 section#landing-page {
   min-height: 100vh;
@@ -104,7 +107,7 @@ section#landing-page {
   position: relative;
 }
 section#landing-page div.overlay {
-  background-color: rgba(18, 18, 18, 0.884);
+  background-color: rgba(18, 18, 18, 0.808);
   position: absolute;
   height: 100%;
   width: 100%;
