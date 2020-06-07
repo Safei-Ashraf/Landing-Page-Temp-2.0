@@ -1,5 +1,6 @@
 :root {
   --main-color: rgb(0, 176, 255);
+  --theme-color: #121212;
 }
 * {
   box-sizing: border-box;
@@ -9,7 +10,7 @@ html {
 }
 body {
   font-family: "Sriracha", cursive;
-  background-color: #121212;
+  background-color: var(--theme-color);
 }
 
 /* START SETTINGS BOX */
@@ -193,6 +194,8 @@ section#landing-page div.intro-text h1 {
   color: var(--main-color);
   font-size: 3em;
   margin: 0;
+  text-shadow: 0 -1px 4px rgb(49, 47, 47), 0 -2px 10px rgb(0, 176, 255),
+    0 -10px 20px #a73041, 0 -18px 40px black;
 }
 div.intro-text h1 span {
   color: rgb(0, 132, 255);
