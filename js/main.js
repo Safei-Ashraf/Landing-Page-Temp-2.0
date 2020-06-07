@@ -1,5 +1,4 @@
 //Settings box Section:
-
 //SAVING Selected Color to Local Storage:
 //1-CHECK if there is color option in local storage:
 let colorsTheme = localStorage.getItem("color_option");
@@ -27,6 +26,10 @@ colorsList.forEach((li) => {
   //set bg color on click:
   li.addEventListener("click", (e) => {
     document.body.style.backgroundColor = e.target.dataset.color;
+    document.documentElement.style.setProperty(
+      "--theme-color",
+      e.target.dataset.color
+    );
     //STORE Color in  Local Storage
     localStorage.setItem("color_option", e.target.dataset.color);
   });
