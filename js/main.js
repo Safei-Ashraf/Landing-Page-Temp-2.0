@@ -1,4 +1,14 @@
 //Settings box Section:
+
+//SAVING Selected Color to Local Storage:
+//1-CHECK if there is color option in local storage:
+let colorsTheme = localStorage.getItem("color_option");
+
+if (colorsTheme) {
+  document.body.style.backgroundColor = localStorage.getItem("color_option");
+}
+
+//Toggle Color Box:
 //1-Click on Icon
 //2-Icon gets class "open" added
 //3-click again
@@ -8,7 +18,6 @@ let settingsBox = document.querySelector("#settings-box");
 //Click event handler:
 toggleBtn.addEventListener("click", () => {
   settingsBox.classList.toggle("open");
-  console.log("clicked");
 });
 
 //Switch colors in sidebar:
@@ -18,6 +27,8 @@ colorsList.forEach((li) => {
   //set bg color on click:
   li.addEventListener("click", (e) => {
     document.body.style.backgroundColor = e.target.dataset.color;
+    //STORE Color in  Local Storage
+    localStorage.setItem("color_option", e.target.dataset.color);
   });
 });
 
