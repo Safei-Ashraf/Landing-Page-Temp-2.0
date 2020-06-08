@@ -43,3 +43,7 @@ for (let i = 0; i < colorsList.length; i++) {
     this.className += "active-color";
   });
 }
+
+particlesJS.load("particles-js", "assets/particles.json", function () {
+  console.log("callback - particles.js config loaded");
+});
