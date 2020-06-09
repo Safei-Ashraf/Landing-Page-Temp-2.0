@@ -13,9 +13,10 @@ body {
   background-color: var(--theme-color);
 }
 .container {
-  width: 1170px;
+  width: 1000px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 30px;
   margin: auto;
 }
 
@@ -164,8 +165,8 @@ header.header-area ul.nav-list {
 }
 ul.nav-list li {
   display: inline-block;
-  padding: 30px;
-  font-size: 25px;
+  padding: 30px 20px 10px 20px;
+  font-size: 26px;
 }
 ul.nav-list li a {
   text-decoration: none;
@@ -215,6 +216,13 @@ div.intro-text p {
 *
 */
 /*ABOUT ME START*/
+h2#about-header {
+  color: var(--main-color);
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  font-family: "Righteous", cursive;
+}
 section#about-me {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -222,46 +230,45 @@ section#about-me {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 980px;
+  border: 2px solid #222020;
   /* border: 2px solid white; */
 }
-section#about-me h2 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-  margin: 0 0 15px 0;
-  flex-basis: 100%;
-  font-family: "Righteous", cursive;
-}
+/* div.break-before {
+  flex: 1;
+  border: 2px solid transparent;
+} */
 section#about-me div.info-box {
   /* border: 2px solid wheat; */
   padding-left: 0;
-  margin-left: 0;
-  flex: 3;
+  /* margin-left: 0; */
+  flex: 2;
 }
-section#about-me div.info-box h3 {
+section#about-me h3 {
   font-weight: bold;
   font-family: "Righteous", cursive;
-  font-size: 27px;
+  font-size: 34px;
   text-align: center;
   margin-bottom: -10px;
 }
-section#about-me div.info-box p {
+section#about-me p {
   text-align: center;
   font-weight: 100;
   color: #6a7f88;
 }
 section#about-me div.info-box ul.details {
   list-style: none;
-  text-align: center;
+  text-align: left;
   margin-right: 40px;
 }
 section#about-me div.info-box ul.details li {
-  font-size: 18px;
-  margin-left: -30px;
+  font-size: 22px;
+  margin-right: ;
 }
 section#about-me div.info-box ul.details li i {
   margin-right: 5px;
   font-size: 1.5rem;
+  color: var(--main-color);
 }
 section#about-me div.info-box ul.details li a {
   text-decoration: none;
@@ -274,8 +281,9 @@ section#about-me div.info-box p {
 }
 section#about-me div.image-box {
   /* border: 2px solid wheat; */
+
   flex: 1;
-  margin-right: 200px;
+  /* margin-right: 200px; */
 }
 /*****************************************USE AT MEDIA QUERY TO WRAP TO NEXT ROW***********/
 /* .break {
@@ -291,6 +299,7 @@ section#about-me div.image-box img {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  width: 75%;
 }
 
 /*ABOUT ME END*/
