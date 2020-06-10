@@ -303,5 +303,48 @@ section#about-me div.image-box img {
   -o-border-radius: 50%;
   width: 75%;
 }
-
 /*ABOUT ME END*/
+/*
+*
+*
+*
+*/
+/*PROJECTS GALLERY START*/
+section.projects-gallery {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section.projects-gallery h2 {
+  color: var(--main-color);
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  font-family: "Righteous", cursive;
+}
+section.projects-gallery div.img-box {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.projects-gallery div.img-box img {
+  width: 180px;
+  padding: 3px;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
+  margin: 5px;
+  cursor: pointer;
+}
+section.projects-gallery div.img-box img:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+/*PROJECTS GALLERY END*/
