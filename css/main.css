@@ -338,10 +338,12 @@ section.projects-gallery div.img-box img {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  opacity: 0.9;
 }
 section.projects-gallery div.img-box img:hover {
   transition: 0.5s;
   transform: scale(1.2);
+  opacity: 1;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -350,6 +352,7 @@ section.projects-gallery div.img-box img:hover {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  z-index: 2;
 }
 section.projects-gallery h4 {
   color: var(--main-color);
