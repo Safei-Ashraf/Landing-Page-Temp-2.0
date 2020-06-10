@@ -380,9 +380,13 @@ section.projects-gallery h4:hover {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-section.projects-gallery h4 a {
+section.projects-gallery a {
   text-decoration: none;
   color: inherit;
 }
 
 /*PROJECTS GALLERY END*/
+
+/***TIMELINE EDUCATION START***/
+
+/***TIMELINE EDUCATION END***/
