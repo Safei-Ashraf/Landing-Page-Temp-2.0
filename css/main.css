@@ -16,7 +16,7 @@ body {
   width: 1000px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 30px;
+  padding-top: 0;
   margin: auto;
 }
 
@@ -153,6 +153,7 @@ header.header-area {
   font-family: "Righteous", cursive;
   display: flex;
   padding: 10px;
+  background-color: var(--theme-color);
 }
 header.header-area div.logo {
   width: 300px;
