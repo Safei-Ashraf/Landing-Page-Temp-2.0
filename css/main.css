@@ -60,11 +60,14 @@ section#settings-box {
 section#settings-box.open {
   left: 0;
 }
-section#settings-box i.fa-palette {
+
+section#settings-box i.fa-chevron-circle-right {
   position: absolute;
   top: 15%;
-  right: -35px;
-  padding-top: 10px;
+  right: -4.5rem;
+  padding-top: 3.2rem;
+  padding-left: 4rem;
+  font-size: 3rem;
   background-color: #e2e2e2;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -72,10 +75,24 @@ section#settings-box i.fa-palette {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   text-align: center;
-  width: 35px;
-  height: 35px;
+  width: 9rem;
+  height: 9rem;
   cursor: pointer;
+  font-size: 3rem;
 }
+/*ANIMATION TO SIDE BUTTON*/
+section#settings-box i.fa-chevron-circle-right {
+  animation: shadow-pulse 1s infinite;
+}
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px var(--main-color);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(210, 248, 221, 0);
+  }
+}
+
 section#settings-box i.fa-palette:hover {
   transition: 0.5s;
   transform: scale(1.2);
