@@ -9,3 +9,19 @@ function randomizeBackground() {
 }
 //call random image function every 7s:
 setInterval(() => randomizeBackground(), 7000);
+
+//Slide Navbar on Scroll:
+let navBar = document.querySelector("header.header-area");
+
+/* W3C BaseCode*/
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    navBar.style.top = "0";
+  } else {
+    navBar.style.top = "-100px";
+  }
+}

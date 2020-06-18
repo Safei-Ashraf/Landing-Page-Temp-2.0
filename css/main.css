@@ -182,6 +182,7 @@ section#landing-page {
   min-height: 100vh;
   background-image: url(../imgs/hero/3.png);
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 section#landing-page div.overlay {
@@ -196,12 +197,21 @@ section#landing-page div.overlay {
 
 header.header-area {
   position: relative;
-  z-index: 2;
+  z-index: 20;
   color: #e2e2e2;
   font-family: "Righteous", cursive;
   display: flex;
   padding: 10px;
+ width: 100vw;
+ background-color: var(--theme-color);
+ padding: 0;
+ margin-top: -10px;
+ margin-left: -10px;
+ position: fixed;
+ top: -100px;
+ border-bottom: 4px solid #000  ;
 }
+
 header.header-area div.logo {
   width: 300px;
   padding: 30px;
@@ -232,6 +242,8 @@ ul.nav-list li a.active {
 }
 
 section#landing-page div.intro-text {
+  margin-top: 50px;
+  padding-top: 3rem;
   width: 100%;
   text-align: center;
   color: white;
