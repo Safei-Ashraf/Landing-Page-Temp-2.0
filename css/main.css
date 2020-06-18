@@ -196,12 +196,12 @@ section#landing-page div.overlay {
 }
 
 header.header-area {
-  position: relative;
-  z-index: 20;
-  color: #e2e2e2;
-  font-family: "Righteous", cursive;
-  display: flex;
-  padding: 10px;
+ position: relative;
+ z-index: 20;
+ color: #e2e2e2;
+ font-family: "Righteous", cursive;
+ display: flex;
+ padding: 10px;
  width: 100vw;
  background-color: var(--theme-color);
  padding: 0;
@@ -209,7 +209,12 @@ header.header-area {
  margin-left: -10px;
  position: fixed;
  top: -100px;
- border-bottom: 4px solid #000  ;
+ border-bottom: 4px solid #000;
+ transition: top 0.4s ;
+ -webkit-transition: top 0.4s ;
+ -moz-transition: top 0.4s ;
+ -ms-transition: top 0.4s ;
+ -o-transition: top 0.4s ;
 }
 
 header.header-area div.logo {

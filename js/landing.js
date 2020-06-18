@@ -19,7 +19,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     navBar.style.top = "0";
   } else {
     navBar.style.top = "-100px";
