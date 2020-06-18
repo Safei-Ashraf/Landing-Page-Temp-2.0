@@ -4,6 +4,7 @@
 }
 * {
   box-sizing: border-box;
+  outline: none;
 }
 html {
   scroll-behavior: smooth;
@@ -176,7 +177,7 @@ section#landing-page {
   position: relative;
 }
 section#landing-page div.overlay {
-  background-color: rgba(18, 18, 18, 0.96);
+  background-color: rgba(18, 18, 18, 0.75);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -192,7 +193,6 @@ header.header-area {
   font-family: "Righteous", cursive;
   display: flex;
   padding: 10px;
-  background-color: var(--theme-color);
 }
 header.header-area div.logo {
   width: 300px;
@@ -493,6 +493,22 @@ section.projects-gallery h4:hover {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
+section.projects-gallery h4:not(:hover) {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  color: var(--main-color);
+  text-align: center;
+  border: 3px solid #e2e2e2;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 25px;
+}
 section.projects-gallery a {
   text-decoration: none;
   color: inherit;
@@ -501,5 +517,72 @@ section.projects-gallery a {
 /*PROJECTS GALLERY END*/
 
 /***TIMELINE EDUCATION START***/
+section.edu-timeline {
+  background-color: var(--theme-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
+.edu-timeline .timeline-content {
+  position: relative;
+  overflow: hidden;
+}
+.timeline-content:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #303030;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  top: 0;
+  z-index: 1;
+}
+div.timeline-content div.year {
+  border: 2px solid transparent;
+  background-color: #606060;
+  width: 50px;
+  text-align: center;
+  margin: 10px auto;
+  color: var(--main-color);
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+div.timeline-content .left,
+div.timeline-content .right {
+  width: calc(50% - 30px);
+  margin-bottom: 30px;
+  position: relative;
+}
+div.timeline-content .left {
+  float: left;
+}
+div.timeline-content .right {
+  float: right;
+}
+div.timeline-content div.content {
+  padding: 20px;
+  background-color: #303030;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+div.timeline-content h3 {
+  font-weight: bold;
+  color: var(--main-color);
+  margin: 0 0 10px;
+}
+div.timeline-content p {
+  color: #e2e2e2;
+  margin: 0;
+  line-height: 1.6;
+}
 /***TIMELINE EDUCATION END***/
