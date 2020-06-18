@@ -20,7 +20,7 @@ body {
   padding-top: 0;
   margin: auto;
 }
-.container h2{
+.container h2,h2{
   color: var(--main-color);
   text-align: center;
   font-weight: bold;
@@ -432,8 +432,8 @@ section#about-me div.image-box img {
 */
 /*PROJECTS GALLERY START*/
 section.projects-gallery {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 section.projects-gallery h2 {
   color: var(--main-color);
@@ -476,7 +476,7 @@ section.projects-gallery div.img-box img:hover {
   z-index: 2;
 }
 section.projects-gallery h4 {
-  color: var(--main-color);
+  color: #e2e2e2;
   text-align: center;
   border: 3px solid #e2e2e2;
   border-radius: 8px;
@@ -485,6 +485,7 @@ section.projects-gallery h4 {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   font-size: 25px;
+  background-color: #303030;
 }
 section.projects-gallery h4:hover {
   transition: 0.4s;
@@ -507,7 +508,7 @@ section.projects-gallery h4:not(:hover) {
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
-  color: var(--main-color);
+  
   text-align: center;
   border: 3px solid #e2e2e2;
   border-radius: 8px;
@@ -527,8 +528,8 @@ section.projects-gallery a {
 /***TIMELINE EDUCATION START***/
 section.edu-timeline {
   background-color: var(--theme-color);
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .edu-timeline .timeline-content {
