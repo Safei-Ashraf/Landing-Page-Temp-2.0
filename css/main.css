@@ -585,4 +585,46 @@ div.timeline-content p {
   margin: 0;
   line-height: 1.6;
 }
+div.timeline-content div.left::before {
+  right: -40px;
+}
+div.timeline-content div.right::before {
+  left: -40px;
+}
+div.timeline-content div.left::before,
+div.timeline-content div.right::before {
+  content: " ";
+  background-color: #909090;
+  width: 15px;
+  height: 15px;
+  border: 3px solid rgb(0, 132, 255);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  z-index: 3;
+}
+.clear-float {
+  clear: both;
+}
+/*Adding Side Arrows to the timeline*/
+div.timeline-content div.left .content::before {
+  content: "";
+  border: solid 16px;
+  border-color: transparent transparent transparent #303030;
+  position: absolute;
+  right: -32px;
+  top: 3px;
+}
+div.timeline-content div.right .content::before {
+  content: "";
+  border: solid 16px;
+  border-color: transparent #303030 transparent transparent;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+}
 /***TIMELINE EDUCATION END***/
