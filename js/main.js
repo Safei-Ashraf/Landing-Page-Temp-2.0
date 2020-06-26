@@ -23,6 +23,7 @@ toggleBtn.addEventListener("click", () => {
 
 });
 
+//Needs REMAKE////////////////////////////////////////////////////////////<<<<<<<<<//////////!!!!!!!
 //Switch colors in sidebar:
 const colorsList = document.querySelectorAll(".colors-list li");
 //Loop on the list colors:
@@ -32,13 +33,13 @@ colorsList.forEach((li) => {
     document.body.style.backgroundColor = e.target.dataset.color;
     document.documentElement.style.setProperty(
       "--theme-color",
-      e.target.dataset.color
+      '#121212'
     );
     //STORE Color in  Local Storage
     localStorage.setItem("color_option", e.target.dataset.color);
   });
 });
-
+///////////////////////////////////////////////////////////////////////////////////////////////
 //Highlight Selected color with ACTIVE Class:
 for (let i = 0; i < colorsList.length; i++) {
   colorsList[i].addEventListener("click", function () {
