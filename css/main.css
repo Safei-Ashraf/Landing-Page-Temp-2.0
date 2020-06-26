@@ -164,6 +164,8 @@ section#landing-page {
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
+	border-bottom-left-radius: 50% 50%;
+	border-bottom-right-radius: 50% 50%;
 }
 section#landing-page div.overlay {
 	background-color: rgba(18, 18, 18, 0.75);
