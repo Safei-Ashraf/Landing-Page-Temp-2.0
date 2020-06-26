@@ -13,6 +13,16 @@ html {
 body {
 	font-family: "Sriracha", cursive;
 	background-color: var(--theme-color);
+	color: white;
+	transition: 0.3s linear;
+	-webkit-transition: 0.3s linear;
+	-moz-transition: 0.3s linear;
+	-ms-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+}
+.light-mode {
+	background-color: #fffafa;
+	color: black;
 }
 .container {
 	width: 1000px;
@@ -91,6 +101,7 @@ section#settings-box i#side-toggle {
 	height: 4rem;
 	cursor: pointer;
 	font-size: 1.5rem;
+	color: inherit;
 }
 /*ANIMATION TO SIDE BUTTON*/
 section#settings-box i#side-toggle {
@@ -116,8 +127,10 @@ section#settings-box h4 {
 	color: #222020;
 	font-family: "Righteous", cursive;
 	font-size: 1.6rem;
+	margin-bottom: 1rem;
 }
-section#settings-box ul.colors-list {
+/*/////////////Mode Button////////////////////////////////*/ /*OLD*/
+/* section#settings-box ul.colors-list {
 	list-style: none;
 	text-align: center;
 	padding: 0;
@@ -154,7 +167,52 @@ section#settings-box .colors-list li.active-color {
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
+} */
+/*/////////////Mode Button////////////////////////////////*/ /*NEEEEEEEEW*/
+.checkbox {
+	opacity: 0;
+	position: absolute;
 }
+
+.label {
+	background-color: #111;
+	margin: auto;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
 /* END SETTINGS BOX */
 /*
 *
@@ -177,6 +235,8 @@ section#landing-page div.overlay {
 	width: 100%;
 	left: 0;
 	top: 0;
+	border-bottom-left-radius: 49% 49%;
+	border-bottom-right-radius: 49% 49%;
 	z-index: 1;
 }
 
@@ -350,7 +410,6 @@ h2#about-header {
 section#about-me {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	color: var(--white-color);
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -397,7 +456,7 @@ section#about-me div.info-box ul.details li i {
 }
 section#about-me div.info-box ul.details li a {
 	text-decoration: none;
-	color: var(--white-color);
+	color: inherit;
 }
 
 section#about-me div.info-box p {
@@ -529,7 +588,6 @@ section.projects-gallery a {
 
 /***TIMELINE EDUCATION START***/
 section.edu-timeline {
-	background-color: var(--theme-color);
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
