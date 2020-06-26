@@ -123,20 +123,28 @@ section#settings-box ul.colors-list {
 	padding: 0;
 }
 section#settings-box .colors-list li {
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
+	font-size: 1.4rem;
+	text-align: center;
+	color: wheat;
+	background-color: #121212;
 	display: inline-block;
 	cursor: pointer;
 	border-radius: 20%;
-	padding: 1.5px;
-	margin-left: 2px;
-	margin-right: 2px;
-	border: 3px solid transparent;
+	margin: auto auto;
+	border: 5px solid transparent;
 	-webkit-border-radius: 20%;
 	-moz-border-radius: 20%;
 	-ms-border-radius: 20%;
 	-o-border-radius: 20%;
 	opacity: 0.6;
+}
+section#settings-box .colors-list li:nth-child(2) {
+	text-align: center;
+	background-color: wheat;
+	font-size: 1.4rem;
+	color: goldenrod;
 }
 section#settings-box .colors-list li.active-color {
 	opacity: 1;
@@ -146,12 +154,6 @@ section#settings-box .colors-list li.active-color {
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
-}
-section#settings-box .colors-list li:first-child {
-	background-color: #121212;
-}
-section#settings-box .colors-list li:nth-child(2) {
-	background-color: #fff;
 }
 /* END SETTINGS BOX */
 /*
