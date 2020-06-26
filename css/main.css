@@ -75,21 +75,22 @@ section#settings-box.open {
 section#settings-box i#side-toggle {
 	position: absolute;
 	top: 15%;
-	right: -4.5rem;
-	padding-top: 3.2rem;
-	padding-left: 4rem;
+	right: -2.5rem;
+	padding-top: 1.2rem;
+	padding-left: 1rem;
 	font-size: 3rem;
-	background-color: #e2e2e2;
+	background-color: transparent;
+	color: var(--white-color);
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 	text-align: center;
-	width: 9rem;
-	height: 9rem;
+	width: 4rem;
+	height: 4rem;
 	cursor: pointer;
-	font-size: 3rem;
+	font-size: 1.5rem;
 }
 /*ANIMATION TO SIDE BUTTON*/
 section#settings-box i#side-toggle {
