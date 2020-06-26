@@ -72,7 +72,7 @@ section#settings-box.open {
 	left: 0;
 }
 
-section#settings-box i.fa-chevron-circle-right {
+section#settings-box i#side-toggle {
 	position: absolute;
 	top: 15%;
 	right: -4.5rem;
@@ -92,7 +92,7 @@ section#settings-box i.fa-chevron-circle-right {
 	font-size: 3rem;
 }
 /*ANIMATION TO SIDE BUTTON*/
-section#settings-box i.fa-chevron-circle-right {
+section#settings-box i#side-toggle {
 	animation: shadow-pulse 1s infinite;
 }
 @keyframes shadow-pulse {
@@ -104,18 +104,6 @@ section#settings-box i.fa-chevron-circle-right {
 	}
 }
 
-section#settings-box i.fa-palette:hover {
-	transition: 0.5s;
-	transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	-o-transform: scale(1.2);
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-ms-transition: 0.5s;
-	-o-transition: 0.5s;
-}
 section#settings-box div.options-box {
 	padding: 20px 20px 20px 20px;
 	text-align: center;
@@ -162,18 +150,8 @@ section#settings-box .colors-list li:first-child {
 	background-color: #121212;
 }
 section#settings-box .colors-list li:nth-child(2) {
-	background-color: #0f4c81;
+	background-color: #fff;
 }
-section#settings-box .colors-list li:nth-child(3) {
-	background-color: #c0d725;
-}
-section#settings-box .colors-list li:nth-child(4) {
-	background-color: #f26b5b;
-}
-section#settings-box .colors-list li:nth-child(5) {
-	background-color: #ffa41b;
-}
-
 /* END SETTINGS BOX */
 /*
 *

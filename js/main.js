@@ -14,9 +14,13 @@ if (colorsTheme) {
 //4-Icon gets class "open" removed;
 let toggleBtn = document.querySelector("#toggle-btn");
 let settingsBox = document.querySelector("#settings-box");
+let toggleIcon = document.querySelector('#side-toggle');
 //Click event handler:
 toggleBtn.addEventListener("click", () => {
   settingsBox.classList.toggle("open");
+  toggleIcon.classList.toggle('fa-chevron-circle-right');
+  toggleIcon.classList.toggle('fa-chevron-circle-left');
+
 });
 
 //Switch colors in sidebar:
