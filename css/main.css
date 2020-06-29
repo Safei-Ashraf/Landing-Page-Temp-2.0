@@ -239,7 +239,10 @@ section#landing-page div.overlay {
 	border-bottom-right-radius: 49% 49%;
 	z-index: 1;
 }
-
+canvas{
+	border-bottom-left-radius: 50% 50%;
+	border-bottom-right-radius: 50% 50%;
+}
 header.header-area {
 	position: relative;
 	z-index: 20;
