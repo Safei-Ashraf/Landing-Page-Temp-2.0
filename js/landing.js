@@ -8,7 +8,7 @@ function randomizeBackground() {
   landingPage.style.backgroundImage = `url("/imgs/hero/${randomizer}.png")`;
 }
 //call random image function every 7s:
-setInterval(() => randomizeBackground(), 7000);
+// setInterval(() => randomizeBackground(), 7000);
 
 //Slide Navbar on Scroll:
 let navBar = document.querySelector("header.header-area");
