@@ -67,10 +67,10 @@ h2 {
 section#settings-box {
 	position: fixed;
 	top: 0;
-	left: -200px;
-	width: 200px;
+	left: -7%;
+	width: 7%;
 	min-height: 100vh;
-	background-color: rgba(226, 226, 226, 0.1);
+	background-color: transparent;
 	z-index: 999;
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
@@ -122,13 +122,13 @@ section#settings-box div.options-box {
 	background-color: rgba(226, 226, 226, 0.6);
 	margin-top: 100px;
 }
-section#settings-box h4 {
+/* section#settings-box h4 {
 	margin: 0;
 	color: #222020;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
 	margin-bottom: 1rem;
-}
+} */
 /*/////////////Mode Button////////////////////////////////*/ /*OLD*/
 /* section#settings-box ul.colors-list {
 	list-style: none;
@@ -176,7 +176,6 @@ section#settings-box .colors-list li.active-color {
 
 .label {
 	background-color: #111;
-	margin: auto;
 	border-radius: 50px;
 	cursor: pointer;
 	display: flex;
