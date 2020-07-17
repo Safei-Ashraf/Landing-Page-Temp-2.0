@@ -6,6 +6,12 @@
 * {
 	box-sizing: border-box;
 	outline: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
 }
 html {
 	scroll-behavior: smooth;
@@ -64,25 +70,47 @@ h2 {
 }
 
 /* START SETTINGS BOX */
-section#settings-box {
+section#left-col {
 	position: fixed;
 	top: 0;
-	left: -7%;
-	width: 7%;
+	left: 0;
+	width: 10%;
 	min-height: 100vh;
 	background-color: transparent;
-	z-index: 999;
-	transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-ms-transition: 0.5s;
-	-o-transition: 0.5s;
+	z-index: 4;
 }
-section#settings-box.open {
-	left: 0;
+section#left-col div.my-logo {
+	text-align: center;
+	margin: auto;
+	margin-left: -30px;
+	padding-left: 0;
+	position: relative;
+	font-size: 3rem;
+}
+section#left-col div#comms-container {
+	margin-top: 20px;
+}
+section#left-col div.comms {
+	font-size: 0.8rem;
+	text-align: center;
+	margin: auto;
+	margin-left: -30px;
+	padding-left: 0;
+	margin-top: 25px;
 }
 
-section#settings-box i#side-toggle {
+/*This Controls the size of Left Icons + Right Icon > Mode Button*/
+section#left-col div.comms .fab,
+.far,
+.fas {
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+/* section#settings-box.open {
+	left: 0;
+} */
+
+/* section#settings-box i#side-toggle {
 	position: absolute;
 	top: 15%;
 	right: -2.5rem;
@@ -102,9 +130,9 @@ section#settings-box i#side-toggle {
 	cursor: pointer;
 	font-size: 1.5rem;
 	color: inherit;
-}
+} */
 /*ANIMATION TO SIDE BUTTON*/
-section#settings-box i#side-toggle {
+/* section#settings-box i#side-toggle {
 	animation: shadow-pulse 1s infinite;
 }
 @keyframes shadow-pulse {
@@ -114,60 +142,59 @@ section#settings-box i#side-toggle {
 	100% {
 		box-shadow: 0 0 0 35px rgba(210, 248, 221, 0);
 	}
-}
+} */
 
-section#settings-box div.options-box {
+/* section#settings-box div.options-box {
 	padding: 20px 20px 20px 20px;
 	text-align: center;
-	background-color: rgba(226, 226, 226, 0.6);
+	background-color: transparent;
 	margin-top: 100px;
-}
-/* section#settings-box h4 {
-	margin: 0;
-	color: #222020;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.6rem;
-	margin-bottom: 1rem;
 } */
-/*/////////////Mode Button////////////////////////////////*/ /*OLD*/
-/* section#settings-box ul.colors-list {
-	list-style: none;
-	text-align: center;
-	padding: 0;
+
+/* END SETTINGS BOX */
+/*
+*
+*
+*/
+/* START LANDING PAGE */
+section#landing-page {
+	min-height: 100vh;
+	background-image: url(/SVG/Background\ SVG.svg);
+	/* background-size: cover; */
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-attachment: fixed;
+	position: relative;
+	border-bottom-left-radius: 50% 50%;
+	border-bottom-right-radius: 50% 50%;
+	width: 70%;
+	margin: auto;
 }
-section#settings-box .colors-list li {
-	width: 40px;
-	height: 40px;
-	font-size: 1.4rem;
-	text-align: center;
-	color: wheat;
-	background-color: #121212;
-	display: inline-block;
-	cursor: pointer;
-	border-radius: 20%;
-	margin: auto auto;
-	border: 5px solid transparent;
-	-webkit-border-radius: 20%;
-	-moz-border-radius: 20%;
-	-ms-border-radius: 20%;
-	-o-border-radius: 20%;
-	opacity: 0.6;
+
+section#landing-page div.overlay {
+	background-color: rgba(18, 18, 18, 0.75);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	border-bottom-left-radius: 49% 49%;
+	border-bottom-right-radius: 49% 49%;
+	z-index: 1;
 }
-section#settings-box .colors-list li:nth-child(2) {
-	text-align: center;
-	background-color: wheat;
-	font-size: 1.4rem;
-	color: goldenrod;
+canvas {
+	border-bottom-left-radius: 50% 50%;
+	border-bottom-right-radius: 50% 50%;
 }
-section#settings-box .colors-list li.active-color {
-	opacity: 1;
-	transform: scale(1.1);
-	border: 3px solid var(--white-color);
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-o-transform: scale(1.1);
-} */
+
+/*Menu Section to the right*/
+section.menu-side {
+	position: fixed;
+	right: 50px;
+	top: 30px;
+	z-index: 4;
+	margin-right: -10px;
+}
 /*/////////////Mode Button////////////////////////////////*/ /*NEEEEEEEEW*/
 .checkbox {
 	opacity: 0;
@@ -212,66 +239,33 @@ section#settings-box .colors-list li.active-color {
 	color: #f39c12;
 }
 
-/* END SETTINGS BOX */
-/*
-*
-*
-*/
-/* START LANDING PAGE */
-section#landing-page {
-	min-height: 100vh;
-	background-image: url(/SVG/Background\ SVG.svg);
-	/* background-size: cover; */
-	background-repeat: no-repeat;
-	background-position-x: center;
-	background-attachment: fixed;
-	position: relative;
-	border-bottom-left-radius: 50% 50%;
-	border-bottom-right-radius: 50% 50%;
-}
-
-section#landing-page div.overlay {
-	background-color: rgba(18, 18, 18, 0.75);
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	left: 0;
-	top: 0;
-	border-bottom-left-radius: 49% 49%;
-	border-bottom-right-radius: 49% 49%;
-	z-index: 1;
-}
-canvas {
-	border-bottom-left-radius: 50% 50%;
-	border-bottom-right-radius: 50% 50%;
-}
-header.header-area {
+/* header.header-area {
 	position: relative;
 	z-index: 20;
 	color: #e2e2e2;
 	font-family: 'Open Sans', sans-serif;
 	display: flex;
 	padding: 10px;
-	width: 100vw;
+	width: 70%;
 	background-color: var(--theme-color);
 	padding: 0;
-	margin-top: -10px;
+	margin-top: -20px;
 	margin-left: -10px;
 	position: fixed;
 	top: -100px;
-	border-bottom: 4px solid #000;
+	border-bottom: 4px solid transparent;
 	transition: top 0.4s;
 	-webkit-transition: top 0.4s;
 	-moz-transition: top 0.4s;
 	-ms-transition: top 0.4s;
 	-o-transition: top 0.4s;
-}
+} */
 
-header.header-area div.logo {
-	width: 300px;
+/* header.header-area div.logo {
+	width: 100px;
 	padding: 30px;
-}
-header.header-area ul.nav-list {
+} */
+/* header.header-area ul.nav-list {
 	list-style: none;
 	width: 100%;
 	text-align: center;
@@ -294,7 +288,7 @@ ul.nav-list li a.active {
 	-moz-transition: 0.5s;
 	-ms-transition: 0.5s;
 	-o-transition: 0.5s;
-}
+} */
 
 section#landing-page div.intro-text {
 	margin-top: 9.2rem;
@@ -458,7 +452,6 @@ section#about-me div.info-box ul.details {
 }
 section#about-me div.info-box ul.details li {
 	font-size: 22px;
-	margin-right: ;
 }
 section#about-me div.info-box ul.details li i {
 	margin-right: 5px;
