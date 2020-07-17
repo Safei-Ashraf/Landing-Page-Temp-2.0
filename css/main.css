@@ -80,9 +80,9 @@ section#left-col {
 	z-index: 4;
 }
 section#left-col div.my-logo {
-	text-align: center;
+	text-align: left;
 	margin: auto;
-	margin-left: -30px;
+	margin-left: 1rem;
 	padding-left: 0;
 	position: relative;
 	font-size: 3rem;
@@ -92,11 +92,11 @@ section#left-col div#comms-container {
 }
 section#left-col div.comms {
 	font-size: 0.8rem;
-	text-align: center;
+	text-align: left;
 	margin: auto;
-	margin-left: -30px;
+	margin-left: 2rem;
 	padding-left: 0;
-	margin-top: 25px;
+	margin-top: 3rem;
 }
 
 /*This Controls the size of Left Icons + Right Icon > Mode Button*/
