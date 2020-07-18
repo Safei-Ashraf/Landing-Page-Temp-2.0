@@ -85,10 +85,10 @@ section#left-col div.my-logo {
 	margin-left: 1rem;
 	padding-left: 0;
 	position: relative;
-	font-size: 3rem;
+	font-size: 3.2rem;
 }
 section#left-col div#comms-container {
-	margin-top: 20px;
+	margin-top: 80px;
 }
 section#left-col div.comms {
 	font-size: 0.8rem;
@@ -96,66 +96,16 @@ section#left-col div.comms {
 	margin: auto;
 	margin-left: 2rem;
 	padding-left: 0;
-	margin-top: 3rem;
+	margin-top: 2.5rem;
 }
 
 /*This Controls the size of Left Icons + Right Icon > Mode Button*/
 section#left-col div.comms .fab,
-.far,
-.fas {
-	font-size: 1.1rem;
-	cursor: pointer;
-}
-/* section#settings-box.open {
-	left: 0;
-} */
-
-/* section#settings-box i#side-toggle {
-	position: absolute;
-	top: 15%;
-	right: -2.5rem;
-	padding-top: 1.2rem;
-	padding-left: 1rem;
-	font-size: 3rem;
-	background-color: transparent;
-	color: var(--white-color);
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	text-align: center;
-	width: 4rem;
-	height: 4rem;
-	cursor: pointer;
+section#left-col div.comms .far,
+section#left-col div.comms .fas {
 	font-size: 1.5rem;
-	color: inherit;
-} */
-/*ANIMATION TO SIDE BUTTON*/
-/* section#settings-box i#side-toggle {
-	animation: shadow-pulse 1s infinite;
+	cursor: pointer;
 }
-@keyframes shadow-pulse {
-	0% {
-		box-shadow: 0 0 0 0px var(--main-color);
-	}
-	100% {
-		box-shadow: 0 0 0 35px rgba(210, 248, 221, 0);
-	}
-} */
-
-/* section#settings-box div.options-box {
-	padding: 20px 20px 20px 20px;
-	text-align: center;
-	background-color: transparent;
-	margin-top: 100px;
-} */
-
-/* END SETTINGS BOX */
-/*
-*
-*
-*/
 /* START LANDING PAGE */
 section#landing-page {
 	min-height: 100vh;
@@ -398,6 +348,7 @@ section#landing-page div.arrow-down span:nth-child(5) {
 *
 *
 */
+
 /*ABOUT ME START*/
 h2#about-header {
 	color: var(--main-color);
