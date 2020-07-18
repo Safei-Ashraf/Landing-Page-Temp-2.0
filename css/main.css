@@ -248,7 +248,7 @@ section#landing-page div.intro-text {
 	color: white;
 	z-index: 2;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
@@ -257,90 +257,54 @@ section#landing-page div.intro-text {
 	-o-transform: translate(-50%, -50%);
 }
 section#landing-page div.intro-text h1 {
-	color: var(--main-color);
-	font-size: 3em;
+	color: rgb(0, 132, 255);
+	font-size: 1.5em;
 	margin: 0;
 	text-shadow: 0 -1px 4px rgb(49, 47, 47), 0 -2px 10px black;
 }
-div.intro-text h1 span {
+div.intro-text h1 p.title-p {
 	color: rgb(0, 132, 255);
+	font-size: 3em;
+	margin-top: 0px;
 }
 div.intro-text p {
-	line-height: 1.6;
+	font-weight: bold;
+	line-height: 1;
 	font-size: 1.5em;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-shadow: 0 -1px 4px rgb(49, 47, 47), 0 -2px 10px black;
 }
-section#landing-page div.arrow-down {
-	cursor: pointer;
-	position: relative;
-	width: 30px;
-	height: 30px;
-	margin: 0 auto;
-	margin-top: 30px;
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
+div.intro-text p:last-of-type {
+	margin-bottom: 50px;
 }
-section#landing-page div.arrow-down span {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	display: block;
-	border: none;
-	border-right: 7px solid white;
-	border-bottom: 7px solid white;
-	animation: animate 1s linear infinite;
-	-webkit-animation: animate 1s linear infinite;
+div.intro-text p.front-dev {
+	margin-top: 40px;
 }
-section#landing-page div.arrow-down span:nth-child(1) {
-	top: -30px;
-	left: -30px;
-	animation-delay: 0s;
+/*Get Resume Button*/
+a.resume-btn {
+	padding: 15px 30px;
+	color: rgb(0, 176, 255);
+	text-transform: capitalize;
+	overflow: hidden;
+	font-size: 24px;
+	font-weight: bolder;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	border: 2px solid #fffafa;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
 }
-section#landing-page div.arrow-down span:nth-child(2) {
-	top: -15px;
-	left: -15px;
-	animation-delay: 0.2s;
-}
-section#landing-page div.arrow-down span:nth-child(3) {
-	top: 0px;
-	left: 0px;
-	animation-delay: 0.4s;
-}
-section#landing-page div.arrow-down span:nth-child(4) {
-	top: 15px;
-	left: 15px;
-	animation-delay: 0.6s;
-}
-section#landing-page div.arrow-down span:nth-child(5) {
-	top: 30px;
-	left: 30px;
-	animation-delay: 0.8s;
-}
-@keyframes animate {
-	0% {
-		border-color: var(--main-color);
-		transform: translate(0, 0);
-		-webkit-transform: translate(0, 0);
-		-moz-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		-o-transform: translate(0, 0);
-	}
-	20% {
-		border-color: #fff;
-		transform: translate(15px, 15px);
-		-webkit-transform: translate(15px, 15px);
-		-moz-transform: translate(15px, 15px);
-		-ms-transform: translate(15px, 15px);
-		-o-transform: translate(15px, 15px);
-	}
-	20.1%,
-	100% {
-		border-color: #fff;
-	}
+a.resume-btn:hover {
+	color: #fffafa;
+	background-color: rgb(0, 132, 255);
+	box-shadow: 0 0 10px rgb(0, 176, 255), 0 0 40px rgb(0, 176, 255), 0 0 90px rgb(0, 176, 255);
 }
 
 /* END LANDING PAGE */
@@ -356,6 +320,7 @@ h2#about-header {
 	font-weight: bold;
 	font-size: 45px;
 	font-family: 'Open Sans', sans-serif;
+	margin-top: 90px;
 }
 section#about-me {
 	padding-top: 50px;
@@ -364,25 +329,16 @@ section#about-me {
 	flex-wrap: wrap;
 	align-items: center;
 	width: 100%;
-	max-width: 980px;
-	border-radius: 8px;
-	/*border: 2px solid white;
-	*/
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-ms-border-radius: 8px;
-	-o-border-radius: 8px;
-	-webkit-border-radius: 8px;
+	flex-direction: column;
 }
 /* div.break-before {
   flex: 1;
   border: 2px solid transparent;
 } */
 section#about-me div.info-box {
-	/* border: 2px solid wheat; */
 	padding-left: 0;
-	/* margin-left: 0; */
-	width: 65%;
+	flex: 2;
+	order: 2;
 }
 section#about-me h3 {
 	font-weight: bold;
@@ -419,10 +375,8 @@ section#about-me div.info-box p {
 	margin: 10px 10px 0 2px;
 }
 section#about-me div.image-box {
-	/* border: 2px solid wheat; */
-
-	width: 30%;
-	/* margin-right: 200px; */
+	flex: 1;
+	order: 1;
 }
 /*****************************************USE AT MEDIA QUERY TO WRAP TO NEXT ROW***********/
 /* .break {
