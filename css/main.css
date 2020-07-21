@@ -168,8 +168,11 @@ section.menu-side {
 	position: relative;
 	height: 26px;
 	width: 50px;
-	transform: scale(1.5);
-	margin-top: 1rem;
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
 }
 
 .label .ball {
