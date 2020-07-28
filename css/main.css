@@ -320,7 +320,7 @@ section#landing-page div.intro-text {
 }
 section#landing-page div.intro-text h1 {
 	color: rgb(0, 132, 255);
-	font-size: 1.5em;
+	font-size: 2em;
 	margin: 0;
 	text-shadow: 0 -1px 4px rgb(49, 47, 47), 0 -2px 10px black;
 }
@@ -407,7 +407,7 @@ section#about-me h3 {
 section#about-me p {
 	text-align: center;
 	font-weight: 100;
-	color: #6a7f88;
+	color: #c59102;
 }
 section#about-me div.info-box div.details {
 	list-style: none;
@@ -421,15 +421,17 @@ section#about-me div.info-box div.details p.bio {
 }
 section#about-me div.info-box div.details p.bio span.udacity {
 	font-size: 14pt;
-	color: rgb(0, 132, 255);
+	color: rgb(113, 183, 248);
 	font-weight: bolder;
-	text-decoration: underline;
+	font-style: italic;
+	text-shadow: 1px 1px 1px rgb(2, 93, 179);
 }
 section#about-me div.info-box div.details p.bio span.iti {
-	color: rgb(250, 0, 100);
+	color: rgb(243, 86, 149);
 	font-weight: bolder;
 	font-size: 14pt;
-	text-decoration: underline;
+	font-style: italic;
+	text-shadow: 1px 1px 1px rgb(145, 10, 64);
 }
 
 section#about-me div.info-box p {
@@ -513,28 +515,34 @@ section.projects-gallery div.project-box div.project-tile {
 	box-shadow: 5px 5px 15px rgb(31, 28, 28), 5px 5px 15px rgb(31, 28, 28);
 }
 section.projects-gallery div.project-box div:nth-child(1) {
-	background-image: url("https://user-images.githubusercontent.com/44810632/88088970-8f1a9c80-cb8b-11ea-8002-23dd37547810.png");
+	background-image: url('../imgs/projects/Personal\ Site.png');
 }
 section.projects-gallery div.project-box div:nth-child(2) {
-	background-image: url("https://user-images.githubusercontent.com/44810632/88088773-3d721200-cb8b-11ea-89c5-bcdbe4993666.png");
+	background-image: url('../imgs/projects/Soon.png');
 }
 section.projects-gallery div.project-box div:nth-child(3) {
-	background-image: url("https://user-images.githubusercontent.com/44810632/88089237-f3d5f700-cb8b-11ea-9632-4baf9f84cf76.png");
+	background-image: url('../imgs/projects/Landing\ Page.png');
 }
 section.projects-gallery div.project-box div:nth-child(4) {
-	background-image: url("https://user-images.githubusercontent.com/44810632/88089464-4fa08000-cb8c-11ea-95bf-2fc963cf9e9e.png");
+	background-image: url('../imgs/projects/David\ Chu.png');
 }
 section.projects-gallery div.project-box div:nth-child(5) {
-	background-image: url("https://user-images.githubusercontent.com/44810632/88089974-31874f80-cb8d-11ea-91c9-40e69758d1a0.png");
+	background-image: url('../imgs/projects/Italian\ Resturant.png');
 }
 section.projects-gallery div.project-box div:nth-child(6) {
-	background-image: url("https://user-images.githubusercontent.com/44810632/88090396-d0ac4700-cb8d-11ea-931f-ba40c6cbe3c2.png");
+	background-image: url('../imgs/projects/Weather\ Journal.png');
 }
 section.projects-gallery div.project-box div:nth-child(7) {
-	background-image: url("https://user-images.githubusercontent.com/44810632/88091676-b1aeb480-cb8f-11ea-9f9b-78ca185599e4.png");
+	background-image: url('../imgs/projects/Matching\ game.png');
 }
 section.projects-gallery div.project-box div:nth-child(8) {
-	background-image: url("https://user-images.githubusercontent.com/44810632/88092229-7791e280-cb90-11ea-93b8-997d20c2bc62.png");
+	background-image: url('../imgs/projects/Covid\ Checker.png');
+}
+section.projects-gallery div.project-box div:nth-child(9) {
+	background-image: url('../imgs/projects/Arcade\ game.png');
+}
+section.projects-gallery div.project-box div:nth-child(10) {
+	background-image: url('../imgs/projects/Soon.png');
 }
 span.project-info {
 	position: absolute;
@@ -552,6 +560,7 @@ span.project-info a {
 	margin-right: 20%;
 	display: inline-block;
 	position: relative;
+	color: #fffafa;
 }
 section.projects-gallery div.project-box div:hover {
 	transition: 0.5s;
@@ -569,11 +578,11 @@ section.projects-gallery div.project-box div:hover {
 }
 a.more-btn {
 	position: absolute;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
+	left: 50%;
+	margin-left: -120px;
 	width: 240px;
+	background-clip: border-box;
+	background-color: #222639;
 }
 
 /*PROJECTS GALLERY END*/
@@ -601,7 +610,7 @@ section.edu-timeline {
 }
 div.timeline-content div.year {
 	border: 2px solid transparent;
-	background-color: #606060;
+	background-color: #202020;
 	width: 50px;
 	text-align: center;
 	margin: 10px auto;
