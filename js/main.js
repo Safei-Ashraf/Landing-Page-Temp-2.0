@@ -21,4 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
       darkSound.play();
     }
   }
+
+  //Init AOS:
+  AOS.init({
+    ease: "ease",
+    duration: 1000,
+  });
 });
