@@ -25,6 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
   //Init AOS:
   AOS.init({
     ease: "ease",
-    duration: 1000,
+    duration: 2000,
   });
 });
