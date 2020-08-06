@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 :root {
 	--main-color: rgb(0, 176, 255);
 	--theme-color: #222639;
@@ -16,6 +18,7 @@ a {
 }
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 body {
 	font-family: "Sriracha", cursive;
@@ -89,15 +92,37 @@ section#left-col div.my-logo {
 	position: relative;
 	font-size: 3.2rem;
 }
+section#left-col div.my-logo img {
+	width: 100%;
+	transform: scale(0.5);
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	-ms-transform: scale(0.5);
+	-o-transform: scale(0.5);
+}
 section#left-col div#comms-container {
-	margin-top: 160px;
+	margin-top: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	z-index: 1;
+	margin-bottom: 200px;
 }
 section#left-col div.comms {
 	font-size: 0.8rem;
 	margin-top: 2.5rem;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+div.comms:hover {
+	transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-ms-transform: scale(1.4);
+	-o-transform: scale(1.4);
 }
 
 /*This Controls the size of Left Icons + Right Icon > Mode Button*/
@@ -116,9 +141,7 @@ section#landing-page {
 	background-position-x: center;
 	background-attachment: fixed;
 	position: relative;
-	border-bottom-left-radius: 50% 50%;
-	border-bottom-right-radius: 50% 50%;
-	width: 70%;
+	width: 100%;
 	margin: auto;
 }
 
@@ -129,13 +152,7 @@ section#landing-page div.overlay {
 	width: 100%;
 	left: 0;
 	top: 0;
-	border-bottom-left-radius: 49% 49%;
-	border-bottom-right-radius: 49% 49%;
 	z-index: 1;
-}
-canvas {
-	border-bottom-left-radius: 50% 50%;
-	border-bottom-right-radius: 50% 50%;
 }
 
 /*Menu Section to the right*/
@@ -239,7 +256,7 @@ div.menu-container span {
 	height: 100%;
 	width: 0;
 	position: fixed;
-	z-index: 1;
+	z-index: 11;
 	top: 0;
 	left: 0;
 	background-color: rgb(0, 0, 0);
@@ -499,6 +516,8 @@ section.skills div#tools {
 section.projects-gallery {
 	padding-top: 30px;
 	padding-bottom: 30px;
+	position: relative;
+	margin-bottom: 120px;
 }
 section.projects-gallery h2 {
 	color: var(--main-color);
@@ -618,7 +637,7 @@ a.more-btn {
 
 /*PROJECTS GALLERY END*/
 
-/***TIMELINE EDUCATION START***/
+/* **TIMELINE EDUCATION START**
 section.edu-timeline {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -712,6 +731,7 @@ div.timeline-content div.right::before {
 	clear: both;
 }
 /*Adding Side Arrows to the timeline*/
+/*
 div.timeline-content div.left .content::before {
 	content: "";
 	border: solid 16px;
@@ -727,25 +747,194 @@ div.timeline-content div.right .content::before {
 	position: absolute;
 	left: -32px;
 	top: 3px;
+} */
+
+/*Footer Styling*/
+
+footer#contact {
+	position: relative;
+	height: 100px;
+	width: 100%;
+	padding: 10px;
+	border-top: outset 2px rgba(0, 176, 255, 0.2);
+	margin-top: 150px;
+	text-align: center;
+	z-index: 3;
+	background-color: rgb(12, 126, 179);
+}
+div.copy {
+	border-top: outset 2px rgba(0, 176, 255, 0.2);
+	margin: auto auto;
+	z-index: 8;
+	background-color: rgb(12, 126, 179);
+}
+div.work {
+	font-family: 'Pacifico';
+	font-size: 40px;
+	z-index: 8;
+	background-color: rgb(12, 126, 179);
+}
+
+footer div#footer-container {
+	position: relative;
+	display: flex;
+	margin: auto auto;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 8;
+	background-color: rgb(12, 126, 179);
+}
+.footer-item {
+	font-size: 3rem;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+.footer-item:hover {
+	transform: skew(20deg);
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-ms-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	animation: shake 2s infinite;
+	animation-direction: alternate;
+	-webkit-animation: shake 2s infinite;
+}
+@keyframes shake {
+	0% {
+		transform: skewY(20deg);
+		-webkit-transform: skewY(20deg);
+		-moz-transform: skewY(20deg);
+		-ms-transform: skewY(20deg);
+		-o-transform: skewY(20deg);
+	}
+	100% {
+		transform: skewY(-20deg);
+	}
 }
 /***TIMELINE EDUCATION END***/
 /*Media Queries*/
 /*Extra Small Devices(Phones less than 576px)*/
 @media (max-width: 575px) {
+	section#left-col div#comms-container {
+		display: none;
+	}
+	section#landing-page div.intro-text {
+		padding: 0 30px 0 30px;
+	}
+	section#landing-page div.intro-text p.title-p {
+		font-size: 1.5em;
+	}
+	section#landing-page div.overlay {
+		width: 110vw;
+	}
+	h2#about-header {
+		font-size: 22px;
+	}
+	section#about-me {
+		margin-left: -40px;
+	}
+	section#about-me div.image-box {
+		width: 120%;
+		margin-left: 20px;
+		margin-top: -40px;
+	}
+	section#about-me h3 {
+		font-size: 18px;
+		letter-spacing: 1px;
+		margin-left: -80px;
+	}
+	section#about-me div.info-box p {
+		margin-left: -40px;
+	}
+	section#about-me div.info-box div.details p.bio {
+		margin-left: -40px;
+		width: 150%;
+	}
+	section.projects-gallery div.project-box img,
+	section.projects-gallery div.project-box div.project-tile {
+		width: 180px;
+		height: 180px;
+	}
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+	section#landing-page {
+		background-attachment: scroll;
+	}
+	section#landing-page div.intro-text {
+		padding: 0 30px 0 30px;
+	}
+
+	div.intro-text h1 p.title-p {
+		font-size: 2em;
+	}
+	section#left-col div#comms-container {
+		display: none;
+	}
+	div.work {
+		margin-left: 0;
+		padding-right: 0;
+	}
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+	section#landing-page div.intro-text {
+		border: none;
+	}
+	section#landing-page {
+		background-attachment: fixed;
+	}
+	footer#footer-container {
+		display: block;
+	}
+	section#left-col div#comms-container {
+		display: none;
+	}
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+	section#landing-page div.overlay {
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 1;
+	}
+	section#left-col div#comms-container {
+		margin-top: 75px;
+	}
+	footer div#footer-container {
+		display: flex;
+	}
+	footer#contact {
+		margin-top: 200px;
+	}
+	section#left-col div#comms-container {
+		display: block;
+	}
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+	section#landing-page {
+		width: 70%;
+		border-bottom-left-radius: 50% 50%;
+		border-bottom-right-radius: 50% 50%;
+	}
+	section#landing-page div.overlay {
+		height: 100%;
+		width: 100%;
+		border-bottom-left-radius: 49% 49%;
+		border-bottom-right-radius: 49% 49%;
+	}
+	section#left-col div#comms-container {
+		margin-top: 100px;
+	}
 }
