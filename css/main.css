@@ -834,33 +834,61 @@ footer div#footer-container {
 	h2#about-header {
 		font-size: 22px;
 	}
-	section#about-me {
-		margin-left: -40px;
-	}
 	section#about-me div.image-box {
 		width: 120%;
-		margin-left: 20px;
-		margin-top: -40px;
+		/* margin-left: 20px; */
+		margin-top: -70px;
+	}
+	section#about-me div.image-box img {
+		margin: 40px auto;
 	}
 	section#about-me h3 {
-		font-size: 18px;
+		font-size: 22px;
 		letter-spacing: 1px;
-		margin-left: -80px;
+		margin-left: 20px;
 	}
-	section#about-me div.info-box p {
-		margin-left: -40px;
+	section#about-me p {
+		margin-bottom: 20px;
 	}
+	div.info-box {
+		margin-left: -50px;
+	}
+	.container h2,
+	h2 {
+		font-size: 30px;
+		margin-left: 20px;
+	}
+
 	section#about-me div.info-box div.details p.bio {
-		margin-left: -40px;
+		margin: 0 auto;
 		width: 150%;
+	}
+	div.info-box h3 {
+		text-align: left;
 	}
 	section.projects-gallery div.project-box img,
 	section.projects-gallery div.project-box div.project-tile {
-		width: 180px;
-		height: 180px;
+		width: 200%;
+		height: 220px;
+		margin-bottom: 20px;
+	}
+	section.projects-gallery div.project-box {
+		width: 250px;
+		margin-left: -60px;
+	}
+
+	section.projects-gallery {
+		margin-left: 30px;
+	}
+	section.projects-gallery h2 {
+		margin-left: -10px;
+		font-size: 30px;
+	}
+	span.project-info a {
+		margin-right: 19%;
+		margin-left: 19%;
 	}
 }
-
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 	section#landing-page {
