@@ -819,6 +819,14 @@ footer div#footer-container {
 		-ms-transform: scale(0.8);
 		-o-transform: scale(0.8);
 	}
+	a.resume-btn,
+	a.more-btn {
+		transform: scale(0.7);
+		-webkit-transform: scale(0.7);
+		-moz-transform: scale(0.7);
+		-ms-transform: scale(0.7);
+		-o-transform: scale(0.7);
+	}
 	div.menu-container {
 		margin-bottom: 10px;
 	}
@@ -841,18 +849,41 @@ footer div#footer-container {
 	h2,
 	section.projects-gallery h2 {
 		font-size: 30px;
+		margin-left: -40px;
 	}
-	.tool-item,
+	section#about-me div.image-box {
+		margin-left: -20px;
+	}
+	section.skills div#tools {
+		margin-left: 60px;
+	}
+	.tool-item {
+		width: 60px;
+		height: 60px;
+	}
+	section.projects-gallery div.project-box {
+		margin: auto auto;
+		margin-left: -50px;
+	}
 	section.projects-gallery div.project-box div.project-tile {
 		width: 170px;
 		height: 170px;
 	}
 	.tool-item img {
-		max-width: 150px;
+		max-width: 60px;
 	}
 	span.project-info a {
 		margin-left: 16%;
 		margin-right: 16%;
+	}
+	a.more-btn {
+		left: 38%;
+	}
+	footer div#footer-container {
+		justify-content: space-evenly;
+	}
+	.footer-item {
+		font-size: 25px;
 	}
 }
 
