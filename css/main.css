@@ -118,6 +118,7 @@ body {
 	-moz-transition: opacity 1200ms;
 	-ms-transition: opacity 1200ms;
 	-o-transition: opacity 1200ms;
+	z-index: 0;
 }
 /*Preloader End*/
 .light-mode {
