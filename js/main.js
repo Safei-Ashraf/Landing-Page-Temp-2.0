@@ -21,6 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
       darkSound.play();
     }
   }
+  
+  //Preloader:
+  const preloader = document.querySelector(".preloader");
+  function preload() {
+    preloader.classList.add("hide");
+  }
+  setTimeout(preload, 3000);
 
   //Init AOS:
   AOS.init({
