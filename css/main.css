@@ -110,7 +110,7 @@ section#left-col div#comms-container {
 }
 section#left-col div.comms {
 	font-size: 0.8rem;
-	margin-top: 2.5rem;
+	margin-top: 2.8rem;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -118,11 +118,11 @@ section#left-col div.comms {
 	-o-transition: all 0.3s;
 }
 div.comms:hover {
-	transform: scale(1.4);
-	-webkit-transform: scale(1.4);
-	-moz-transform: scale(1.4);
-	-ms-transform: scale(1.4);
-	-o-transform: scale(1.4);
+	transform: scale(1.7);
+	-webkit-transform: scale(1.7);
+	-moz-transform: scale(1.7);
+	-ms-transform: scale(1.7);
+	-o-transform: scale(1.7);
 }
 
 /*This Controls the size of Left Icons + Right Icon > Mode Button*/
@@ -549,7 +549,7 @@ section.projects-gallery div.project-box img {
 section.projects-gallery div.project-box div.project-tile {
 	position: relative;
 	width: 260px;
-	height: 20vw; /****************************************************CHANGE TO 40 VW on Media Query************/
+	height: 20vw;
 	padding: 3px;
 	background-color: #f6f6f6;
 	border: 1px solid var(--theme-color);
@@ -750,7 +750,6 @@ div.timeline-content div.right .content::before {
 } */
 
 /*Footer Styling*/
-
 footer#contact {
 	position: relative;
 	height: 100px;
@@ -787,38 +786,78 @@ footer div#footer-container {
 }
 .footer-item {
 	font-size: 3rem;
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
+	transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	-o-transition: all 0.8s;
 }
 .footer-item:hover {
-	transform: skew(20deg);
-	-webkit-transform: skew(20deg);
-	-moz-transform: skew(20deg);
-	-ms-transform: skew(20deg);
-	-o-transform: skew(20deg);
-	animation: shake 2s infinite;
-	animation-direction: alternate;
-	-webkit-animation: shake 2s infinite;
-}
-@keyframes shake {
-	0% {
-		transform: skewY(20deg);
-		-webkit-transform: skewY(20deg);
-		-moz-transform: skewY(20deg);
-		-ms-transform: skewY(20deg);
-		-o-transform: skewY(20deg);
-	}
-	100% {
-		transform: skewY(-20deg);
-	}
+	transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
 }
 /***TIMELINE EDUCATION END***/
+
 /*Media Queries*/
+
 /*Extra Small Devices(Phones less than 576px)*/
 @media (max-width: 575px) {
+	.container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	section#left-col div#comms-container {
+		display: none;
+	}
+	section#left-col div.my-logo img {
+		transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+		-moz-transform: scale(0.8);
+		-ms-transform: scale(0.8);
+		-o-transform: scale(0.8);
+	}
+	div.menu-container {
+		margin-bottom: 10px;
+	}
+
+	div.intro-text h1 p.title-p {
+		font-size: 40px;
+		margin-bottom: 0;
+	}
+	div.intro-text p.front-dev {
+		margin-top: 20px;
+	}
+	section#about-me {
+		padding-top: 0;
+	}
+	section#about-me div.info-box div.details p.bio:first-child {
+		display: none;
+	}
+
+	h2#about-header,
+	h2,
+	section.projects-gallery h2 {
+		font-size: 30px;
+	}
+	.tool-item,
+	section.projects-gallery div.project-box div.project-tile {
+		width: 170px;
+		height: 170px;
+	}
+	.tool-item img {
+		max-width: 150px;
+	}
+	span.project-info a {
+		margin-left: 16%;
+		margin-right: 16%;
+	}
+}
+
+/*Extra Small Devices(Phones less than 576px)*/
+/* @media (max-width: 575px) {
 	section#left-col div#comms-container {
 		display: none;
 	}
@@ -829,16 +868,23 @@ footer div#footer-container {
 		font-size: 1.5em;
 	}
 	section#landing-page div.overlay {
-		width: 110vw;
+		width: 100%;
+	}
+	section.menu-side {
+		width: 100px;
+		padding: 0;
+	}
+	div.menu-container {
+		padding: 0;
 	}
 	h2#about-header {
 		font-size: 22px;
+		margin-left: -20px;
 	}
 	section#about-me div.image-box {
 		width: 120%;
 		/* margin-left: 20px; */
-		margin-top: -70px;
-	}
+/*
 	section#about-me div.image-box img {
 		margin: 40px auto;
 	}
@@ -861,20 +907,20 @@ footer div#footer-container {
 
 	section#about-me div.info-box div.details p.bio {
 		margin: 0 auto;
-		width: 150%;
+		width: 100%;
 	}
 	div.info-box h3 {
 		text-align: left;
 	}
 	section.projects-gallery div.project-box img,
 	section.projects-gallery div.project-box div.project-tile {
-		width: 200%;
+		width: 100%;
 		height: 220px;
 		margin-bottom: 20px;
 	}
 	section.projects-gallery div.project-box {
 		width: 250px;
-		margin-left: -60px;
+		margin-left: -30px;
 	}
 
 	section.projects-gallery {
@@ -888,8 +934,12 @@ footer div#footer-container {
 		margin-right: 19%;
 		margin-left: 19%;
 	}
-}
+	a.more-btn {
+		margin-left: -130px;
+	}
+} */
 /*Small devices (landscape phones, 576px and up)*/
+/*
 @media (min-width: 576px) {
 	section#landing-page {
 		background-attachment: scroll;
@@ -910,7 +960,10 @@ footer div#footer-container {
 	}
 }
 
+
+*/
 /*Medium devices (tablets, 768px and up)*/
+/*
 @media (min-width: 768px) {
 	section#landing-page div.intro-text {
 		border: none;
@@ -925,8 +978,9 @@ footer div#footer-container {
 		display: none;
 	}
 }
-
+*/
 /*Large devices (desktops, 992px and up)*/
+/*
 @media (min-width: 992px) {
 	section#landing-page div.overlay {
 		height: 100%;
@@ -948,8 +1002,10 @@ footer div#footer-container {
 		display: block;
 	}
 }
-
+*/
 /*Extra large devices (large desktops, 1200px and up)*/
+
+/*
 @media (min-width: 1200px) {
 	section#landing-page {
 		width: 70%;
@@ -966,3 +1022,4 @@ footer div#footer-container {
 		margin-top: 100px;
 	}
 }
+*/
