@@ -7,6 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.toggle("light-mode");
     coolSounds();
   });
+  //Preloader:
+  const preloader = document.querySelector(".preloader");
+  function preload() {
+    preloader.classList.add("hide");
+  }
+  setTimeout(preload, 3000);
+
   //Sound Effects based on Mode:
   function coolSounds() {
     if (chk.checked == true) {
@@ -21,13 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
       darkSound.play();
     }
   }
-  
-  //Preloader:
-  const preloader = document.querySelector(".preloader");
-  function preload() {
-    preloader.classList.add("hide");
-  }
-  setTimeout(preload, 3000);
 
   //Init AOS:
   AOS.init({
