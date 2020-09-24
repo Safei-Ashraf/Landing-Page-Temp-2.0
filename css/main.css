@@ -683,6 +683,10 @@ section.projects-gallery div.project-box div:nth-child(9) {
 	background-image: url("../imgs/projects/Arcade\ game.png");
 }
 section.projects-gallery div.project-box div:nth-child(10) {
+	background-image: url("../imgs/projects/filmsClash.png");
+	order:1;
+}
+section.projects-gallery div.project-box div:nth-child(11) {
 	background-image: url("../imgs/projects/Soon.png");
 }
 span.project-info {
