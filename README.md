@@ -1,3 +1,4 @@
 ## Personal Site
 
-#### Work In Progress. . . .
+
+## olde version dated Dec 2020, will be replaced soon
